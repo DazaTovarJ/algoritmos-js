@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Números Primos</title>
+</head>
+
+<body>
+  <h1>Números Primos</h1>
+  <p><a href="index.html">Volver al inicio</a></p>
+  <form id="form-calcular" novalidate>
+    <fieldset>
+      <legend>Calcular los <var>n</var> primeros números primos</legend>
+      <div>
+        <label for="n">¿Cuántos números primos desea obtener?</label>
+        <input type="number" name="n" min="1" id="n" required />
+        <p id="validation-message"></p>
+      </div>
+      <div>
+        <button type="submit">Calcular</button>
+      </div>
+    </fieldset>
+  </form>
+  <div>
+    <p id="resultado"></p>
+  </div>
+  <script src="js/ejercicio1.js"></script>
+</body>
+
+</html>
