@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -10,7 +10,23 @@
 
 <body>
   <h1>Serie de Fibonacci</h1>
-  <a href="index.html">Volver al inicio</a>
+  <p><a href="index.html">Volver al inicio</a></p>
+  <form id="form-fibonacci">
+    <fieldset>
+      <legend>Obtener los <var>n</var> primeros términos de la serie de Fibonacci</legend>
+      <div>
+        <label for="n">Ingrese el número de términos:</label>
+        <input type="number" name="n" min="2" id="n" required />
+      </div>
+      <div>
+        <button type="submit">Enviar</button>
+      </div>
+    </fieldset>
+  </form>
+  <div>
+    <p id="resultado"></p>
+  </div>
+  <script src="js/ejercicio3.js"></script>
 </body>
 
 </html>
