@@ -9,7 +9,23 @@
 
 <body>
   <h1>Sumatoria de números</h1>
-  <a href="index.html">Volver al inicio</a>
+  <p><a href="index.html">Volver al inicio</a></p>
+  <form id="form-sumatoria">
+    <fieldset>
+      <legend>Sumatoria: 1<sup><var>n</var></sup></legend>
+      <div>
+        <label for="n">Ingrese un número:</label>
+        <input type="number" name="n" min="1" id="n" required />
+      </div>
+      <div>
+        <button type="submit">Obtener sumatoria</button>
+      </div>
+    </fieldset>
+  </form>
+  <div>
+    <p id="resultado"></p>
+  </div>
+  <script src="js/ejercicio2.js"></script>
 </body>
 
 </html>
